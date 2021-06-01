@@ -7,14 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2021, SO8</copyright>
-    <lastBuildDate>Sun, 21 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rvngithub.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rvngithub.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>혼자 보려고 정리하는 Hugo 가이드</title>
+      <link>https://rvngithub.github.io/post/hugo_guide/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rvngithub.github.io/post/hugo_guide/</guid>
+      <description>Github에서  두개의 Repository 생성  발행할 블로그의 기본 데이터들을 올릴 Repository.(이름은 상관 없음=hugo-blog) Hugo에서 빌드할 때 자체적으로 변환을 거친 Public 폴더 안의 생성된 HTML 파일들을 올릴 Repository.
+여기가 홈페이지가 되므로 [깃헙 아이디=rvngithub].github.io 로 생성.    터미널에서 brew install hugo 블로그 폴더를 생성하고 싶은 로컬 디렉토리에서
+hugo new site [폴더 이름(혹은 블로그 이름 등)=blog] cd blog 원하는 테마가 있다면 해당 테마 파일을 다운로드.
+대체로 해당 테마 제작자의 깃헙 페이지에 설명이 나와있으며</description>
+    </item>
+    
     <item>
       <title>혼자 보려고 정리하는 마크다운 가이드</title>
       <link>https://rvngithub.github.io/post/markdown_guide/</link>
       <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://rvngithub.github.io/post/markdown_guide/</guid>
-      <description>참고하면 좋은 링크들 Markdown 공식 가이드를 참조해도 좋다.
+      <description>참고하면 좋은 링크들 Markdown 공식 가이드를 참조.
 Basic
 Extended
 Hugo에서 지원하는 마크다운 리스트는 여기를 참조.

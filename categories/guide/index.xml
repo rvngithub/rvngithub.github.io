@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>BREAK OF DAWN</title>
-    <link>https://rvngithub.github.io/</link>
-    <description>Recent content on BREAK OF DAWN</description>
+    <title>Guide on BREAK OF DAWN</title>
+    <link>https://rvngithub.github.io/categories/guide/</link>
+    <description>Recent content in Guide on BREAK OF DAWN</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2021, SO8</copyright>
-    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rvngithub.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://rvngithub.github.io/about/</link>
-      <pubDate>Tue, 01 Jun 2021 15:43:43 +0900</pubDate>
-      
-      <guid>https://rvngithub.github.io/about/</guid>
-      <description>공사 중</description>
-    </item>
-    
+    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rvngithub.github.io/categories/guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>혼자 보려고 정리하는 Hugo 가이드</title>
       <link>https://rvngithub.github.io/post/hugo_guide/</link>

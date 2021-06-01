@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head>
-    <title>혼자 보려고 정리하는 마크다운 가이드</title>
+    <title>혼자 보려고 정리하는 Hugo 가이드</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="" />
@@ -81,54 +81,62 @@
 <div class="container">
     <div class="pl-sm-2">
         <div class="mb-3">
-            <h3 class="mb-0">혼자 보려고 정리하는 마크다운 가이드</h3>
+            <h3 class="mb-0">혼자 보려고 정리하는 Hugo 가이드</h3>
             
-            <small class="text-muted">Published March 21, 2021</small>
+            <small class="text-muted">Published June 1, 2021</small>
         </div>
 
         <article>
-            <h5 id="참고하면-좋은-링크들">참고하면 좋은 링크들</h5>
-<p><strong>Markdown 공식 가이드</strong>를 참조.<br>
-<a href="https://www.markdownguide.org/basic-syntax/">Basic</a><br>
-<a href="https://www.markdownguide.org/extended-syntax/">Extended</a><br>
-<strong>Hugo에서 지원</strong>하는 마크다운 리스트는 <a href="https://www.markdownguide.org/tools/hugo/">여기</a>를 참조.</p>
-<h5 id="기본적인-규칙">기본적인 규칙</h5>
-<p>이탤릭체나 볼드체는 텍스트 앞뒤로 _나 *를 삽입해서 만들 수 있다.<br>
-이탤릭은 하나, 볼드는 두개.<br>
-<em>이탤릭</em> <strong>볼드</strong>
-취소선은 앞뒤로 ~를 두개씩 붙여서 그을 수 있다.<br>
-<del>취소선</del></p>
-<h5 id="개행">개행</h5>
-<p>강제 개행은 문장 끝에 스페이스를 두번 띄운다.</p>
-<h5 id="문단-구분">문단 구분</h5>
-<p>문단 구분은 엔터키 두번으로 가능하다.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h5 id="코드-블럭-넣기">코드 블럭 넣기</h5>
-<p>코드 전후로 `를 세 개씩 붙인다.<br>
-<code>print(&quot;Hello, world!&quot;)</code></p>
-<h5 id="인용하기">인용하기</h5>
-<blockquote>
-<p>인용구는 문장 첫머리에 &gt;를 삽입<br>
-폰트 크기등으로 강조하고 싶으면 문장 첫 머리에 #를 삽입한다.(Heading)<br>
-ex) # 텍스트(#뒤에 공백 필요) 1개부터 6개까지 인식 가능</p>
-</blockquote>
-<hr>
-<h5 id="페이지-구분선">페이지 구분선</h5>
-<p>페이지 구분선은 -를 세개 이상 입력.</p>
-<h5 id="각주-미주-등">각주, 미주 등</h5>
-<p>각주 혹은 미주를 삽입하려면 각주를 넣고 싶은 자리에<code>[^1]</code>를 넣고<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
-<p>이 외에도 표나 정렬, 리스트(투두리스트도 가능) 등 많은 기능이 있지만<br>
-당장 블로그를 쓰면서 필요한 문법은 이 정도인 것 같다.<br>
-뭔가 새로 생길 때마다 추가 예정.</p>
+            <h5 id="github에서">Github에서</h5>
+<ol>
+<li>두개의 Repository 생성
+<ol>
+<li>발행할 블로그의 기본 데이터들을 올릴 Repository.(이름은 상관 없음=hugo-blog)</li>
+<li>Hugo에서 빌드할 때 자체적으로 변환을 거친 Public 폴더 안의 생성된 HTML 파일들을 올릴 Repository.<br>
+여기가 홈페이지가 되므로 <strong>[깃헙 아이디=rvngithub].github.io</strong> 로 생성.</li>
+</ol>
+</li>
+</ol>
+<h5 id="터미널에서">터미널에서</h5>
+<ol start="2">
+<li><code>brew install hugo</code></li>
+<li>블로그 폴더를 생성하고 싶은 로컬 디렉토리에서<br>
+<code>hugo new site [폴더 이름(혹은 블로그 이름 등)=blog]</code></li>
+<li><code>cd blog</code></li>
+<li>원하는 테마가 있다면 해당 테마 파일을 다운로드.<br>
+대체로 해당 테마 제작자의 깃헙 페이지에 설명이 나와있으며<br>
+본 테마의 경우<br>
+<code>git submodule add https://github.com/austingebauer/devise.git themes/devise</code><br>
+테마 업데이트의 경우 <code>git submodule update --remote themes/devise</code></li>
+<li><code>git init</code><br>
+<code>git remote add origin [1-1.에서 생성한 Repository 링크]</code><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><br>
+<code>git submodule add -b master [1-2.에서 생성한 Repository 링크] public</code></li>
+<li><code>hugo new post/[파일명].md</code> 등으로 테스트 포스트 작성.</li>
+<li><code>hugo server -D</code><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></li>
+<li><code>hugo -t [테마명=devise]</code> or <code>hugo -D</code></li>
+<li><code>cd public</code><br>
+<code>git add .</code><br>
+<code>git commit -m &quot;[커밋 메세지]&quot;</code><br>
+<code>git push origin master</code><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
+<li><code>cd ..</code><br>
+<code>git add .</code><br>
+<code>git commit -m &quot;[커밋 메세지]&quot;</code><br>
+<code>git push origin master</code><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></li>
+</ol>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>밑에 따로 각주 내용 입력을 입력해주면 된다. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>만약 remote origin이 이미 존재한다고 나온다면, git remote rm origin 으로 기존 remote origin 삭제 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>일부러 코드 블럭으로 삽입했다. 안 그러면 자꾸 각주로 인식이 되어서&hellip;. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>문서 속성이 draft: true 로 되어있는 경우에도 로컬호스트에서 확인이 가능 <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>1-2.에서 만든 HTML 파일 등이 올라갈 Repository에 파일 push <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>1-1.에서 만든 Hugo 자체 소스 파일?등이 올라갈 Repository에 파일 push <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
