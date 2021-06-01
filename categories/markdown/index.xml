@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on BREAK OF DAWN</title>
+    <link>https://rvngithub.github.io/categories/markdown/</link>
+    <description>Recent content in Markdown on BREAK OF DAWN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2021, SO8</copyright>
+    <lastBuildDate>Sun, 21 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rvngithub.github.io/categories/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>혼자 보려고 정리하는 마크다운 가이드</title>
+      <link>https://rvngithub.github.io/post/markdown_guide/</link>
+      <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rvngithub.github.io/post/markdown_guide/</guid>
+      <description>참고하면 좋은 링크들 Markdown 공식 가이드를 참조해도 좋다.
+Basic
+Extended
+Hugo에서 지원하는 마크다운 리스트는 여기를 참조.
+기본적인 규칙 이탤릭체나 볼드체는 텍스트 앞뒤로 _나 *를 삽입해서 만들 수 있다.
+이탤릭은 하나, 볼드는 두개.
+이탤릭 볼드 취소선은 앞뒤로 ~를 두개씩 붙여서 그을 수 있다.
+취소선
+개행 강제 개행은 문장 끝에 스페이스를 두번 띄운다.
+문단 구분 문단 구분은 엔터키 두번으로 가능하다.
+코드 블럭 넣기 코드 전후로 `를 세 개씩 붙인다.
+print(&amp;quot;Hello, world!&amp;quot;)
+인용하기  인용구는 문장 첫머리에 &amp;gt;를 삽입</description>
+    </item>
+    
+  </channel>
+</rss>
