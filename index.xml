@@ -35,8 +35,7 @@ hugo new site [폴더 이름(혹은 블로그 이름 등)=blog] cd blog 원하�
       <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://rvngithub.github.io/post/markdown_guide/</guid>
-      <description>참고하면 좋은 링크들 Markdown 공식 가이드를 참조.
-Basic
+      <description>참고하면 좋은 링크들 Markdown 공식 가이드 Basic
 Extended
 Hugo에서 지원하는 마크다운 리스트는 여기를 참조.
 기본적인 규칙 이탤릭체나 볼드체는 텍스트 앞뒤로 _나 *를 삽입해서 만들 수 있다.
